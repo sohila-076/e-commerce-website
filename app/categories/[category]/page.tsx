@@ -27,21 +27,18 @@ export default function CategoryPage() {
       },
     },
   };
-
-  // أنيميشن كل منتج
-  const itemVariants = {
-    hidden: { opacity: 0, y: 40, scale: 0.95 },
-    show: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.9,
-        ease: [0.25, 0.1, 0.25, 1],
-      },
+const itemVariants = {
+  hidden: { opacity: 0, y: 40, scale: 0.95 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.9,
+      ease: [0.25, 0.1, 0.25, 1] as const,
     },
-  };
-
+  },
+};
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
