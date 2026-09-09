@@ -52,6 +52,7 @@ export default function FeatureSection({
         </p>
 
         <AnimatedButton
+        href={buttonLink}
           onClick={() => window.location.href = buttonLink}
           filled={true} 
         >
